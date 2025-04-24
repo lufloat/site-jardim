@@ -1,0 +1,63 @@
+.jardim {
+    background-image: url('/imagens/foto2.png'); /* ou o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: -2em;
+    border-radius: 4em;
+  }
+
+  .jardim img{
+    position: relative;
+    margin-bottom: 3em;
+  }
+  
+  .conteudo {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .texto {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    position: relative;
+    transform: translate(-250px, 40px);
+  }
+  
+  .botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    transform: translate(300px, -80px);
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .laranja {
+    background-color: #e26b12;
+    color: white;
+    border: none;
+  }
+  
+  .transparente {
+    border: 2px solid #e26b12;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .transparente:hover {
+    background-color: #e26b12;
+  }

@@ -1,0 +1,59 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+    <header class="parte superior">
+        <div class = "barra_topo" >
+            <button class="itens1">
+                <img src="{% static 'assets/sino.png' %}" alt="Botão" style="width: 100px;">
+            </button>
+            <button class="itens2">
+                <img src="{% static 'assets/lua.png' %}" alt="Botão" style="width: 100px;">
+            </button>
+        </div>
+        <div class="logo_input">
+            <img src="{% static 'assets/logo.png' %}" alt="Logo PlanteeEncante">
+            <input type ="text" placeholder="O que você procura?" class="logo_input__input">
+        </div>
+    </header>
+    <nav class="menu_navegacao">
+        <div class="navegacao-home"> 
+            <img src="{% static 'assets/home.png' %}">
+            <a href="index.html" class="navegacao-ancora"> Home </a>
+        </div>
+        <div class="navegacao-home"> 
+            <img src="{% static 'assets/trabalhos.png' %}">
+            <a href="index2.html" class="navegacao-ancora"> Nossos trabalhos </a>
+        </div>
+        <div class="navegacao-home"> 
+            <img src="{% static 'assets/sobrenós.png' %}">
+            <a href="#" class="navegacao-ancora"> Sobre nós </a>
+        </div>
+        <div class="navegacao-home"> 
+            <img src="{% static 'assets/surpreendame.png' %}">
+            <a href="#" class="navegacao-ancora">Surpreenda-me </a>
+        </div>
+    </nav>
+    <section class="banner">
+        <img src="{% static 'assets/foto_banner.png' %}" alt="Flor" />
+        <h2 class="texto-sobre-banner">O melhor para o seu Jardim.</h2>
+    </section>      
+    <section class="servicos">
+        <div class="servicos-img">
+            <a href="{% url 'imagem' %}" class="bloco-clicavel">
+                <div class="servicos-img__1">
+                    <img src="{% static 'assets/samambaia.png' %}" alt="Foto de um jardim.">
+                    <h1>Serviço de Jardinagem</h1>
+                    <p>texto exemplo sobre jardinagem e manutenção de jardim</p>
+                </div>
+            </a>
+            <a href="{% url 'imagem' %}" class="bloco-clicavel">
+                <div class="servicos-img__1">
+                    <img src="{% static 'assets/samambaia.png' %}" alt="Foto de um jardim.">
+                    <h1>Serviço de Jardinagem</h1>
+                    <p>texto exemplo sobre jardinagem e manutenção de jardim</p>
+                </div>
+            </a>   
+        </div>
+    </section>
+
+{% endblock %}

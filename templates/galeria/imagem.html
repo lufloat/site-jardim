@@ -1,0 +1,53 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'styles/jardinagem.css' %}">
+<header class="parte superior">
+    <div class = "barra_topo" >
+        <button class="itens1">
+            <img src="{% static 'assets/sino.png' %}" alt="Botão" style="width: 100px;">
+        </button>
+        <button class="itens2">
+            <img src="{% static 'assets/lua.png' %}" alt="Botão" style="width: 100px;">
+        </button>
+    </div>
+    <div class="logo_input">
+        <img src="{% static 'assets/logo.png' %}" alt="Logo PlanteeEncante">
+        <input type ="text" placeholder="O que você procura?" class="logo_input__input">
+    </div>
+</header>
+<nav class="menu_navegacao">
+    <div class="navegacao-home"> 
+        <img src="{% static 'assets/home.png' %}">
+        <a href="{% url 'index' %}" class="navegacao-ancora"> Home </a>
+    </div>
+    <div class="navegacao-home"> 
+        <img src="{% static 'assets/trabalhos.png' %}">
+        <a href="index2.html" class="navegacao-ancora"> Nossos trabalhos </a>
+    </div>
+    <div class="navegacao-home"> 
+        <img src="{% static 'assets/sobrenós.png' %}">
+        <a href="#" class="navegacao-ancora"> Sobre nós </a>
+    </div>
+    <div class="navegacao-home"> 
+        <img src="{% static 'assets/surpreendame.png' %}">
+        <a href="#" class="navegacao-ancora">Surpreenda-me </a>
+    </div>
+</nav>    
+<section class="jardinagem-info">
+    <div class="jardinagem-container">
+        <div class="jardinagem-texto">
+            <p>
+                A manutenção de jardim é essencial para garantir um espaço <strong>verde</strong> saudável, bonito e bem cuidado.
+                Esse processo envolve uma série de atividades, como podas regulares, rega adequada, controle de pragas e doenças,
+                além da adubação do solo para fornecer os nutrientes necessários às plantas.
+            </p>
+        </div>
+        <div class="jardinagem-botoes">
+            <button class="btn-laranja">Contate - nos</button>
+            <button class="btn-transparente">Contate - nos</button>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

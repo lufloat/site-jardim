@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("/styles/header.css");
+@import url("/styles/servicos.css");
+@import url("/styles/navegacao.css");
+@import url("/styles/banner.css");
+@import url("/styles/footer.css");
+@import url("/styles/banner2.css");
+@import url("/styles/jardinagem.css");
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  overflow-x: hidden;
+  font: "Mont";
+
+
+}
+
+
+.itens1{
+  background: transparent;
+  transform: translate(1225px, -14px); /* X e Y */;
+  width: 100px;
+  border: none;
+
+}
+
+  
+
+.itens2{
+  background: transparent;
+  border: none;
+  transform: translate(1153px, -14px); /* X e Y */;
+  width: 100px;
+}

@@ -1,0 +1,44 @@
+.rodape {
+  background-color: #2d7c3f; /* Verde */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-family: 'Montserrat', sans-serif;
+  height: 60px;
+  gap: 12px;
+
+}
+
+.link_contato{
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contato img {
+  cursor: pointer;
+}
+
+.texto_rodape{
+
+position: relative;
+transform: translate(780px, 0px);
+text-align: end;
+padding: 15px;
+
+}
+
+.rodape p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}

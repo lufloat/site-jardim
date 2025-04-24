@@ -1,0 +1,29 @@
+.menu_navegacao{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    position: relative;
+    right: 2.8em;
+    transform: translate(3em, -4.5em);
+    
+}
+
+.navegacao-home {
+    background-color: #2B7E35;
+    width: 307px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px
+    
+
+}
+.navegacao-ancora{
+    text-decoration: none;
+    color: white;
+}

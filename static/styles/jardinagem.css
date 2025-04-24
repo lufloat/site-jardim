@@ -1,0 +1,52 @@
+.jardinagem-info {
+    background-image: url("/static/assets/foto2.png");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.jardinagem-container {
+    background-color: rgba(0, 0, 0, 0.4); /* efeito de escurecimento para o texto aparecer melhor */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.jardinagem-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.jardinagem-botoes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-laranja {
+    background-color: #f26522;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-transparente {
+    background-color: transparent;
+    border: 2px solid #f26522;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}

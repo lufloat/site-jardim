@@ -1,0 +1,44 @@
+.barra_topo {
+  background-color: #2d7c3f; /* Verde */
+  padding: 10px 40px;
+  height: 60px;
+  gap: 20px;
+  display: flex;
+  margin-bottom: -4em;
+  
+  
+  }
+.barra_topo img{
+    bottom: 1em;
+    position: relative;
+  }
+  
+.logo_input{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+
+}
+.logo_input img{
+      position: relative;
+      margin-left: -30em;
+}
+
+.logo_input__input{
+  left: 35em;
+  padding: 2em 5em;
+  position: relative;
+  right: -6em;
+  background-image: url("/imagens/pesquisa.png");
+  background-repeat: no-repeat;
+  background-size: 6em;
+  background-position: 33em;
+  border-color: #F46510;
+  border-width: medium;
+  border-radius: 20px;
+  width: 40em;
+}
+.logo_input__input::placeholder{
+  font-size: 25px;
+}

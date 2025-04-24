@@ -1,0 +1,25 @@
+.banner img {
+    width: 70em;
+    border-radius: 10px;
+    display: block;
+    margin-left: 13em;
+    position: relative;
+    top: 1em;
+  }
+  
+  .banner {
+    position: relative;
+    background-color: #d1fadf;
+    
+  }
+
+.texto-sobre-banner {
+    position: relative;
+    transform: translate(35em, -4.5em);
+    color: white;
+    font-size: 24px;
+    padding: 10px ;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    opacity: 30;
+}
