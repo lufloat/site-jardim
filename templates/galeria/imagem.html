@@ -1,20 +1,24 @@
 {% extends 'galeria/base.html' %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'styles/jardinagem.css' %}">
 <header class="parte superior">
-    <div class = "barra_topo" >
-        <button class="itens1">
-            <img src="{% static 'assets/sino.png' %}" alt="Botão" style="width: 100px;">
-        </button>
-        <button class="itens2">
-            <img src="{% static 'assets/lua.png' %}" alt="Botão" style="width: 100px;">
-        </button>
+    <div class="barra_topo">
+        <img src="{% static 'assets/logo.png' %}" alt="Logo PlanteeEncante">
+            <button class="itens1">
+                <img src="{% static 'assets/sino.png' %}" alt="Botão" style="width: 100px;">
+            </button>
+            <button class="itens2">
+                <img src="{% static 'assets/lua.png' %}" alt="Botão" style="width: 100px;">
+            </button>
     </div>
     <div class="logo_input">
-        <img src="{% static 'assets/logo.png' %}" alt="Logo PlanteeEncante">
-        <input type ="text" placeholder="O que você procura?" class="logo_input__input">
-    </div>
+        <form action="{% url 'buscar' %}" method="get">
+          <button type="submit">
+            <img class="logo_input_img" src="{% static 'assets/pesquisa.png' %}">
+          </button>
+          <input type="text" name="q" placeholder="O que você procura?" class="logo_input__input">
+        </form>            
+     </div>
 </header>
 <nav class="menu_navegacao">
     <div class="navegacao-home"> 
@@ -35,19 +39,32 @@
     </div>
 </nav>    
 <section class="jardinagem-info">
-    <div class="jardinagem-container">
-        <div class="jardinagem-texto">
-            <p>
-                A manutenção de jardim é essencial para garantir um espaço <strong>verde</strong> saudável, bonito e bem cuidado.
-                Esse processo envolve uma série de atividades, como podas regulares, rega adequada, controle de pragas e doenças,
-                além da adubação do solo para fornecer os nutrientes necessários às plantas.
-            </p>
-        </div>
-        <div class="jardinagem-botoes">
-            <button class="btn-laranja">Contate - nos</button>
-            <button class="btn-transparente">Contate - nos</button>
-        </div>
+   <div class="jardinagem-container">
+    <div class="jardinagem-texto">
+        <p>
+            A manutenção de jardim é essencial para garantir um espaço <strong>verde</strong> saudável, bonito e bem cuidado.
+            Esse processo envolve uma série de atividades, como podas regulares, rega adequada, controle de pragas e doenças,
+            além da adubação do solo para fornecer os nutrientes necessários às plantas.
+        </p>
     </div>
+    
+    <div class="jardinagem-imagem">
+    {% if jardins.foto %}
+        <img src="{{ jardins.foto.url }}" alt="{{ jardins.nome }}">
+    {% else %}
+        <img src="{% static 'assets/not-found.png' %}" alt="Imagem não disponível">
+    {% endif %}
+    </div>
+    
+    <div class="jardinagem-botoes">
+        <button class="btn-laranja"> Contate - nos</button>
+        <button class="btn-transparente">Contate - nos</button>
+    </div>
+    <div>
+        <h1>{{ jardins.nome }}</h1>
+        <p>{{ jardins.legenda }}</p>
+    </div>
+</div>
 </section>
 
 {% endblock %}

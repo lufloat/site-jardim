@@ -2,24 +2,22 @@
 {% load static %}
 {% block content %}
     <header class="parte superior">
-        <div class="barra_topo">
-            <img src="{% static 'assets/logo.png' %}" alt="Logo PlanteeEncante">
+        <div class = "barra_topo" >
             <button class="itens1">
-                <img src="{% static 'assets/sino.png' %}" alt="Ícone de notificação">
+                <img src="{% static 'assets/sino.png' %}" alt="Botão" style="width: 100px;">
             </button>
             <button class="itens2">
-                <img src="{% static 'assets/lua.png' %}" alt="Ícone de modo noturno">
+                <img src="{% static 'assets/lua.png' %}" alt="Botão" style="width: 100px;">
             </button>
         </div>
-    
         <div class="logo_input">
             <form action="{% url 'buscar' %}" method="get">
-              <button type="submit">
-                <img class="logo_input_img" src="{% static 'assets/pesquisa.png' %}">
-              </button>
-              <input type="text" name="q" placeholder="O que você procura?" class="logo_input__input">
+                <button type="submit">
+                    <img src="{% static 'assets/logo.png' %}" alt="Logo PlanteeEncante">
+                </button>
+                <input type="text" name="q" placeholder="O que você procura?" class="logo_input__input">
             </form>            
-         </div>
+        </div>
     </header>
     <nav class="menu_navegacao">
         <div class="navegacao-home"> 
@@ -57,12 +55,10 @@
                     {% endif %}
                     <h1>{{ jardins.nome }}</h1>
                     <p>{{ jardins.legenda }}</p>
-                    <p>{{jardns.descricao}}</p>
-
-                 </div>
+            </div>
             </a>   
         </div>
-        {% endif %}
+    {% endif %}
         {% endfor %}
         {% else %}
         <div class="imagem__texto">
@@ -72,5 +68,3 @@
     </section>
 
 {% endblock %}
-
-

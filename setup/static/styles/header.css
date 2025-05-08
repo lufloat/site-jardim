@@ -6,39 +6,117 @@
   display: flex;
   margin-bottom: -4em;
   
-  
   }
+
+
+  .logo_input button {
+    background: none;         /* remove o fundo padrão */
+    border: none;             /* remove a borda padrão */
+    cursor: pointer;          /* cursor de clique */
+    position: absolute;  
+    margin-left: 30em;     /* para posicionar sobre o input */
+  }
+
 .barra_topo img{
-    bottom: 1em;
+    bottom: -10em;
     position: relative;
+    margin-left: 10em;
+  }
+
+
+  .itens1 {
+    position: absolute;
+    margin-left: 15em; /* opcional: para dar um respiro da borda */
+    cursor: pointer;
+    height: 30em;
+  
+  }
+
+  .itens2 {
+    position: absolute;
+    margin-left: 15em; /* opcional: para dar um respiro da borda */
+    cursor: pointer;
   }
   
-.logo_input{
-  display: flex;
-  align-items: center;
-  justify-content: center; 
+  
+.itens1 img {
+  margin-top: -17em;
+}
 
 
+  
+.itens2 img {
+  margin-top: -17em;
 }
-.logo_input img{
-      position: relative;
-      margin-left: -30em;
+
+.itens1:hover img {
+  transform: scale(1.2);             
 }
+
+.itens2:hover img {
+  transform: scale(1.2);             
+}
+
+  
+
+  
+  .logo_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px; /* importante para centralizar verticalmente */
+    gap: 1em; /* espaço entre os itens */
+  }
+
+  .logo_input_img {
+    position: relative;
+    margin-left: -0em;
+  }
 
 .logo_input__input{
-  left: 35em;
-  padding: 2em 5em;
+  left: 23em;
+  padding: 1em 4em;
   position: relative;
-  right: -6em;
-  background-image: url("/imagens/pesquisa.png");
   background-repeat: no-repeat;
   background-size: 6em;
   background-position: 33em;
   border-color: #F46510;
   border-width: medium;
   border-radius: 20px;
-  width: 40em;
+  width: 30em;
 }
+
+
 .logo_input__input::placeholder{
   font-size: 25px;
+}
+
+
+.logo_input button {            /* remove a borda padrão */
+  cursor: pointer;          /* cursor de clique */
+  position: absolute;  
+  margin-left: 55em; 
+  margin-top: 0.5em;
+  z-index: 2    /* para posicionar sobre o input */
+  
+}
+
+.logo_input button:hover {
+  background-color: #00ff00; /* cor no hover */
+  border-radius: 45%;
+  opacity:45% ;
+}
+
+.logo_input_img {
+  width: 5em;   /* aumenta a imagem */
+
+}
+
+.barra_topo button {
+  background: none;         /* Remove o fundo do botão */
+  border: none;             /* Remove a borda */
+  cursor: pointer;          /* Muda o cursor para indicar clicável */
+  display: flex;             /* Flexbox para o conteúdo centralizado */
+  align-items: center;
+  justify-content: center;
 }

@@ -5,11 +5,10 @@
     position: relative;
     right: 2.8em;
     transform: translate(3em, -4.5em);
-    
 }
 
 .navegacao-home {
-    background-color: #2B7E35;
+    background-color: #2d7c3f;
     width: 307px;
     height: 59px;
     display: flex;
@@ -21,9 +20,12 @@
     font-family: 'Montserrat', sans-serif;
     border-radius: 20px
     
-
 }
-.navegacao-ancora{
-    text-decoration: none;
-    color: white;
+
+
+.navegacao-home:hover {
+    color: #73ff00; /* cor mais escura no hover */
+    text-decoration: underline;
+    background-color: #00ff2a;
+    opacity: 90%;
 }
