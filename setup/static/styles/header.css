@@ -29,6 +29,10 @@
     margin-left: 15em; /* opcional: para dar um respiro da borda */
     cursor: pointer;
     height: 30em;
+    background: transparent;
+    transform: translate(1225px, -14px); /* X e Y */;
+    width: 100px;
+    border: none;
   
   }
 
@@ -36,6 +40,11 @@
     position: absolute;
     margin-left: 15em; /* opcional: para dar um respiro da borda */
     cursor: pointer;
+    height: 30em;
+    background: transparent;
+    border: none;
+    transform: translate(1153px, -14px); /* X e Y */;
+    width: 100px;
   }
   
   
@@ -57,9 +66,7 @@
   transform: scale(1.2);             
 }
 
-  
 
-  
   .logo_input {
     display: flex;
     align-items: center;

@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.contato img:hover {
+  transform: scale(1.5);
+}
+
 .texto_rodape{
 
 position: relative;
